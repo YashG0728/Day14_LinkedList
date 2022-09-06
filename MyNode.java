@@ -1,4 +1,4 @@
-package basics.UC7;
+package basics.UC8;
 
 public class MyNode<K> implements INode<K> {
 
