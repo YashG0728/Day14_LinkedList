@@ -1,4 +1,4 @@
-package basics.UC8;
+package basics.UC9;
 
 public class MyLinkedList<K> {
 
@@ -67,32 +67,6 @@ public class MyLinkedList<K> {
             tempNode = tempNode.getNext();
         }
         return null;
-    }
-
-    public void deleteNode(INode<K> myNewNode) {
-        INode<K> tempNode = head;
-        INode<K> prevNode = null;
-        while (tempNode != null && tempNode.getKey() != myNewNode.getKey()) {
-            prevNode = tempNode;
-            tempNode = tempNode.getNext();
-        }
-        prevNode.setNext(tempNode.getNext());
-    }
-
-    public int size() {
-        INode<K> tempNode = head;
-        int count = 0;
-        if (tempNode != null) {
-            while ((tempNode.getNext() != null || (tempNode.getKey() != null))) {
-                tempNode = tempNode.getNext();
-                count++;
-                if (tempNode == null) {
-                    break;
-                }
-            }
-            System.out.println("Size Of Linked list : "+count);
-        }
-        return count;
     }
 
     public void printMyNode() {

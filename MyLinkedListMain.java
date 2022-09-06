@@ -1,4 +1,4 @@
-package basics.UC8;
+package basics.UC9;
 
 public class MyLinkedListMain {
     public static void main(String[] args) {
@@ -12,10 +12,7 @@ public class MyLinkedListMain {
         myLinkedList.append(mySecondNode);
         myLinkedList.insert(myFirstNode, myThirdNode);
         myLinkedList.insert(myThirdNode,myForthNode);
-//        System.out.println(myLinkedList.search(30));
-        myLinkedList.printMyNode();
-        myLinkedList.deleteNode(myForthNode);
-        myLinkedList.size();
+        System.out.println(myLinkedList.search(30));
         myLinkedList.printMyNode();
     }
 }
