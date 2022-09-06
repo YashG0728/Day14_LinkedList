@@ -1,10 +1,9 @@
-package basics.UC2;
+package basics.UC3;
 
 public class MyLinkedList<K> {
 
     public INode<K> head;
     public INode<K> tail;
-
 
     public MyLinkedList() {
         this.head = null;
@@ -21,6 +20,18 @@ public class MyLinkedList<K> {
             INode<K> tempNode = this.head;
             this.head = newNode;
             this.head.setNext(tempNode);
+        }
+    }
+
+    public void append(INode<K> newNode) {
+        if (this.head == null) {
+            this.head = newNode;
+        }
+        if (this.tail == null) {
+            this.tail = newNode;
+        } else {
+            this.tail.setNext(newNode);
+            this.tail = newNode;
         }
     }
 

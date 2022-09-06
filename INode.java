@@ -1,4 +1,4 @@
-package basics.UC2;
+package basics.UC3;
 
 public interface INode<K> {
     K getKey();

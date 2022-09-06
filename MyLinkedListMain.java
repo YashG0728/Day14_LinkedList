@@ -1,15 +1,15 @@
-package basics.UC2;
+package basics.UC3;
 
 public class MyLinkedListMain {
     public static void main(String[] args) {
         MyLinkedList myLinkedList = new MyLinkedList();
-        MyNode<Integer> myFirstNode = new MyNode<>(70);
+        MyNode<Integer> myFirstNode = new MyNode<>(56);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
-        MyNode<Integer> myThirdNode = new MyNode<>(56);
+        MyNode<Integer> myThirdNode = new MyNode<>(70);
 
         myLinkedList.add(myFirstNode);
-        myLinkedList.add(mySecondNode);
-        myLinkedList.add(myThirdNode);
+        myLinkedList.append(mySecondNode);
+        myLinkedList.append(myThirdNode);
 
         myLinkedList.printMyNode();
     }
