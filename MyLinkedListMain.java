@@ -1,4 +1,4 @@
-package basics.UC4;
+package basics.UC5;
 
 public class MyLinkedListMain {
     public static void main(String[] args) {
@@ -10,7 +10,8 @@ public class MyLinkedListMain {
         myLinkedList.add(myFirstNode);
         myLinkedList.append(myThirdNode);
         myLinkedList.insert(myFirstNode, mySecondNode);
-
+        myLinkedList.printMyNode();
+        myLinkedList.popFirst();
         myLinkedList.printMyNode();
     }
 }
