@@ -1,4 +1,4 @@
-package basics.UC5;
+package basics.UC7;
 
 public class MyLinkedList<K> {
 
@@ -41,10 +41,32 @@ public class MyLinkedList<K> {
         myNewNode.setNext(tempNode);
     }
 
-    public INode<K> popFirst(){
+    public INode<K> pop(){
         INode<K> tempNode = this.head;
         this.head = head.getNext();
         return tempNode;
+    }
+
+    public INode<K> popLast() {
+        INode<K> tempNode = head;
+        INode<K> prevNode = null;
+        while (tempNode != null && tempNode.getNext() !=null) {
+            prevNode = tempNode;
+            tempNode = tempNode.getNext();
+        }
+        prevNode.setNext(null);
+        return tempNode;
+    }
+
+    public INode<K> search(K key) {
+        INode<K> tempNode = head;
+        while (tempNode != null && tempNode.getNext() !=null) {
+            if (tempNode.getKey().equals(key)) {
+                return tempNode;
+            }
+            tempNode = tempNode.getNext();
+        }
+        return null;
     }
 
     public void printMyNode() {

@@ -1,17 +1,16 @@
-package basics.UC5;
+package basics.UC7;
 
 public class MyLinkedListMain {
     public static void main(String[] args) {
         MyLinkedList myLinkedList = new MyLinkedList();
         MyNode<Integer> myFirstNode = new MyNode<>(56);
-        MyNode<Integer> mySecondNode = new MyNode<>(30);
-        MyNode<Integer> myThirdNode = new MyNode<>(70);
+        MyNode<Integer> mySecondNode = new MyNode<>(70);
+        MyNode<Integer> myThirdNode = new MyNode<>(30);
 
         myLinkedList.add(myFirstNode);
-        myLinkedList.append(myThirdNode);
-        myLinkedList.insert(myFirstNode, mySecondNode);
-        myLinkedList.printMyNode();
-        myLinkedList.popFirst();
+        myLinkedList.append(mySecondNode);
+        myLinkedList.insert(myFirstNode, myThirdNode);
+        System.out.println(myLinkedList.search(30));
         myLinkedList.printMyNode();
     }
 }
